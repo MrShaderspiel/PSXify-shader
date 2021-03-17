@@ -1,0 +1,12 @@
+option.VERTEX_GRID_X=Vertex Grid Width
+option.VERTEX_GRID_Y=Vertex Grid Height
+
+option.COLOR_MAPPING_MODE=PSX Color Mapping Mode
+value.COLOR_MAPPING_MODE.4.0f=Mode 4
+value.COLOR_MAPPING_MODE.8.0f=Mode 8
+value.COLOR_MAPPING_MODE.15.0f=Mode 15
+value.COLOR_MAPPING_MODE.24.0f=Mode 24
+
+option.AFFINE_MAPPING_EMU=Texture Warp
+
+option.VERTEX_SNAPPING=Vertex Snapping
