@@ -4,22 +4,15 @@ uniform sampler2D lightmap;
 uniform sampler2D texture;
 
 varying vec2 lmcoord;
-varying vec2 texcoord;
+noperspective varying vec2 texcoord;
 varying vec4 glcolor;
-varying float affine;
 
 #include "/lib/defines.glsl"
 
 void main() {
 
 	// Apply textures and color
-	#ifdef AFFINE_MAPPING_EMU
-		vec2 affineTexcoord = texcoord / affine;
-		vec4 color = texture2D(texture, affineTexcoord) * glcolor;
-	#endif
-	#ifndef AFFINE_MAPPING_EMU
-		vec4 color = texture2D(texture, texcoord) * glcolor;
-	#endif
+	vec4 color = texture2D(texture, texcoord) * glcolor;
 
 	// Apply lightmap
 	color *= texture2D(lightmap, lmcoord);
