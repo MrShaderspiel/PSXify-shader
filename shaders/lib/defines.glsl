@@ -1,5 +1,4 @@
 // Toggle settings
-// #define AFFINE_MAPPING_EMU   // PSX Texture Warp
 #define VERTEX_SNAPPING   // PSX Jittery Polygons
 
 // Adjustment settings
